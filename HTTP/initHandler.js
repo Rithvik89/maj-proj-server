@@ -214,7 +214,7 @@ function initHandler(app, config) {
             // get latlong
             config.connections.db.execute(
                 `insert into quantity ( product_id, product_stop, weight_stop) 
-            values (${product_id},"${product_stop}", ${weight_stop}); `, (err, result, fields) => {
+            values (${product_id},"${product_stop}", ${w}); `, (err, result, fields) => {
                 if (err) {
                     console.log(err)
                 }
